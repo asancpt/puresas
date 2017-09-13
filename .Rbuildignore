@@ -1,0 +1,6 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^.*\.csv$
+^.*\.xpt$
+^.*\.sas7bdat$
+^.*\.sas$

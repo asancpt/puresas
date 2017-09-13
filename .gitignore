@@ -1,0 +1,6 @@
+.Rproj.user
+.Rhistory
+.RData
+*.csv
+*.xpt
+*.sas7bdat
