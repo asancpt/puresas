@@ -19,7 +19,7 @@
 
 csv2sas <- function(wd = getwd(), xptPath = getwd(), sas7bdatPath = getwd(), output = "csv2sas.sas", openfile = FALSE){
   ##### MAKING "CSV2XPT.SAS"
-
+  setwd(wd)
   glob2rx("*.CSV")
   glob2rx("*.csv")
   # dir(patten=glob2rx("*.csv"))
@@ -34,6 +34,7 @@ csv2sas <- function(wd = getwd(), xptPath = getwd(), sas7bdatPath = getwd(), out
 
   SASscript = vector()
   for (i in 1:nCSV) {
+    print(CSVs[i])
     tData = read.csv(CSVs[i], as.is=TRUE)
     ColNames = colnames(tData)
     nCol = length(ColNames)

@@ -4,3 +4,4 @@
 ^.*\.xpt$
 ^.*\.sas7bdat$
 ^.*\.sas$
+^docs$
